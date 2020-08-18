@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeInformationSystemController">
+   <children>
+      <Label layoutX="40.0" layoutY="115.0" text="Employee ID:" />
+      <Label layoutX="22.0" layoutY="151.0" text="Employee Name:" />
+      <Label layoutX="26.0" layoutY="189.0" text="Date of Joining:" />
+      <Label layoutX="75.0" layoutY="221.0" prefHeight="17.0" prefWidth="37.0" text="Salary:" />
+      <Label layoutX="185.0" layoutY="34.0" text="EMPLOYEE INFORMATION SYSTEM" textFill="#2d5ea1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="134.0" layoutY="266.0" mnemonicParsing="false" onAction="#display" prefHeight="25.0" prefWidth="95.0" text="DISPLAY ALL" textFill="#a84545" />
+      <Button layoutX="20.0" layoutY="266.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="95.0" text="ADD" textFill="#a13d3d" />
+      <Button layoutX="255.0" layoutY="266.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="95.0" text="CLEAR" textFill="#a84747" />
+      <TextField fx:id="textFieldID" layoutX="134.0" layoutY="111.0" />
+      <TextField fx:id="textFieldName" layoutX="134.0" layoutY="147.0" />
+      <TextField fx:id="textFieldSalary" layoutX="134.0" layoutY="217.0" />
+      <Label layoutX="370.0" layoutY="74.0" text="List of Employees:" />
+      <DatePicker fx:id="textFieldDate" layoutX="134.0" layoutY="181.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="48.0" layoutY="333.0" text="Search Employee by ID/Name:" />
+      <TextField fx:id="textFieldSearch" layoutX="225.0" layoutY="329.0" prefHeight="25.0" prefWidth="207.0" />
+      <Button layoutX="492.0" layoutY="329.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="95.0" text="SEARCH" textFill="#a84343" />
+      <TextArea fx:id="textAreaList" layoutX="370.0" layoutY="98.0" prefHeight="200.0" prefWidth="411.0" />
+      <TextArea fx:id="textAreaSearchResult" editable="false" layoutX="209.0" layoutY="377.0" opacity="0.88" prefHeight="111.0" prefWidth="463.0" />
+   </children>
+</AnchorPane>
